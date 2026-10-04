@@ -12,9 +12,12 @@
   body { margin:0; background:var(--sand); color:var(--ink); font-family:Outfit, sans-serif; font-weight:340; }
   a { color:inherit; }
   .banner { background:#efe4d4; padding:10px 7vw; font-size:13px; border-bottom:1px solid var(--line); }
-  header { min-height:92vh; padding:28px 7vw 72px; display:flex; flex-direction:column; justify-content:flex-end; color:#f7f1e8; background:
+  nav { display:flex; justify-content:space-between; gap:16px; align-items:center; padding:18px 7vw 0; font-size:14px; }
+  nav a { text-decoration:none; opacity:.85; }
+  header { min-height:92vh; padding:0 0 72px; display:flex; flex-direction:column; color:#f7f1e8; background:
     radial-gradient(900px 480px at 80% 20%, rgba(196,92,50,.45), transparent 60%),
     linear-gradient(165deg,#2a241e 0%, #5c4638 48%, #c45c32 100%); }
+  .hero { padding:48px 7vw 0; margin-top:auto; }
   .eyebrow { letter-spacing:.24em; text-transform:uppercase; font-size:12px; opacity:.86; }
   h1 { font-family:Fraunces, serif; font-weight:680; font-size:clamp(46px,8vw,92px); line-height:.92; margin:14px 0 12px; max-width:11ch; }
   .lede { max-width:40rem; font-size:1.18rem; line-height:1.55; }
@@ -35,21 +38,31 @@
   .panel a { color:#f4efe6; }
   .road { margin-top:28px; height:14px; border-radius:999px; background:repeating-linear-gradient(90deg,#c45c32 0 28px,#efe4d4 28px 40px); }
   footer { padding:32px 7vw 56px; background:var(--dusk); color:#f4efe6; }
-  @media (max-width:800px) { .split { grid-template-columns:1fr; } }
+  @media (max-width:800px) { .split { grid-template-columns:1fr; } nav { flex-wrap:wrap; } }
 </style>
 </head>
 <body>
-  <div class="banner">Free Insight Forge concept for Oppi-Vlak Padstal — refreshed 3 Oct 2026. Not a live site. Built only from public listings. No booking engine. For review before any outreach.</div>
+  <div class="banner">Insight Forge free website concept — not a live site · no obligation. Refreshed 4 Oct 2026. Built only from public listings. No booking engine. For review before any outreach.</div>
   <header>
-    <div class="eyebrow">N9 · about 40 km outside Willowmore · Eastern Cape</div>
-    <h1>The Karoo stop people already pull off for.</h1>
-    <p class="lede">Oppi-Vlak Padstal is the N9 oasis travellers write about — roosterkoek, moerkoffie, and a welcome that makes the long drive feel shorter. This concept is a home you would own, instead of a Facebook page and directory listings.</p>
-    <div class="cta-row">
-      <a class="cta primary" href="tel:+27834214409">Call +27 83 421 4409</a>
-      <a class="cta ghost" href="#find">How to find the stall</a>
+    <nav>
+      <strong>Oppi-Vlak Padstal</strong>
+      <div>
+        <a href="#known">Known for</a>
+        &nbsp;·&nbsp;
+        <a href="#find">Find the stall</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="eyebrow">N9 · about 40 km outside Willowmore · Eastern Cape</div>
+      <h1>The Karoo stop people already pull off for.</h1>
+      <p class="lede">Oppi-Vlak Padstal is the N9 oasis travellers write about — roosterkoek, moerkoffie, and a welcome that makes the long drive feel shorter. This concept is a home you would own, instead of a Facebook page and directory listings.</p>
+      <div class="cta-row">
+        <a class="cta primary" href="tel:+27834214409">Call +27 83 421 4409</a>
+        <a class="cta ghost" href="#find">How to find the stall</a>
+      </div>
     </div>
   </header>
-  <section>
+  <section id="known">
     <h2>Already loved. Not yet owned online.</h2>
     <p class="sub">Public listings show a rare review base for a Karoo padstal. The gap is simple: there is no independent Oppi-Vlak website. Searchers land on Facebook and third-party directories.</p>
     <div class="grid">
@@ -90,7 +103,7 @@
     </div>
   </section>
   <footer>
-    <strong>Oppi-Vlak Padstal — concept only, 3 Oct 2026 refresh</strong>
+    <strong>Oppi-Vlak Padstal — concept only, 4 Oct 2026 refresh</strong>
     <p>Insight Forge. Nothing on this page was sent to the business. Score on file: 88/100. Do not mention facilities criticism in outreach.</p>
   </footer>
 </body>
